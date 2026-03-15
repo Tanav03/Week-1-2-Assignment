@@ -1,7 +1,12 @@
+import java.util.Scanner;
+
 public class q3 {
     public static void main(String[] args) {
-        double kilometers = 10.8;
-        double miles = kilometers * 1.6;
-        System.out.println("The distance " + kilometers + " km in miles is " + miles);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the perimeter of the square: ");
+        int perimeter = scanner.nextInt();
+        double side = perimeter / 4.0;
+        System.out.println("The length of the side is " + side + " whose perimeter is " + perimeter);
+        scanner.close();
     }
 }
