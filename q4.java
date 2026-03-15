@@ -1,13 +1,13 @@
 public class q4 {
     public static void main(String[] args) {
-        int costPrice = 129;
-        int sellingPrice = 191;
-        int profit = sellingPrice - costPrice;
-        double profitPercentage = (profit * 100.0) / costPrice;
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        System.out.print("Enter the distance in feet: ");
+        int distanceInFeet = scanner.nextInt();
 
-        System.out.println(
-            "The Cost Price is INR " + costPrice + " and Selling Price is INR " + sellingPrice + "\n" +
-            "The Profit is INR " + profit + " and the Profit Percentage is " + profitPercentage
-        );
+        double distanceInYards = distanceInFeet / 3.0;
+        double distanceInMiles = distanceInYards / 1760.0;
+
+        System.out.printf("The distance in yards is %.2f while the distance in miles is %.4f%n", distanceInYards, distanceInMiles);
+    scanner.close();
     }
 }
