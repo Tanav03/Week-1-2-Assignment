@@ -1,12 +1,13 @@
 import java.util.Scanner;
-
 public class q3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the perimeter of the square: ");
-        int perimeter = scanner.nextInt();
-        double side = perimeter / 4.0;
-        System.out.println("The length of the side is " + side + " whose perimeter is " + perimeter);
-        scanner.close();
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter salary: ");
+        double salary = input.nextDouble();
+        System.out.print("Enter bonus: ");
+        double bonus = input.nextDouble();
+        double income = salary + bonus;
+        System.out.println("The salary is INR " + salary + " and bonus is INR " + bonus + ". Hence Total Income is INR " + income);
+        input.close();
     }
 }
