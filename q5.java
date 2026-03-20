@@ -1,12 +1,15 @@
+import java.util.Scanner;
 public class q5 {
     public static void main(String[] args) {
-        java.util.Scanner sc = new java.util.Scanner(System.in);
-        System.out.print("Enter unit price: ");
-        double unitPrice = sc.nextDouble();
-        System.out.print("Enter quantity: ");
-        int quantity = sc.nextInt();
-        double totalPrice = unitPrice * quantity;
-        System.out.printf("The total purchase price is INR %.2f if the quantity %d and unit price is INR %.2f%n", totalPrice, quantity, unitPrice);
-        sc.close();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter number1: ");
+        int number1 = input.nextInt();
+        System.out.println("Enter number2: ");
+        int number2 = input.nextInt();
+        int temp = number1;
+        number1 = number2;
+        number2 = temp;
+        System.out.println("The swapped numbers are " + number1 + " and " + number2);
+        input.close();
     }
 }
